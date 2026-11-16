@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<title>Gerenciamento de Clientes | URBAN STYLE</title>
+</head>
+<body>
+<header class="site" id="site-header"></header>
+<main class="page">
+  <div class="container">
+    <div class="page-head">
+      <h1>Gerenciamento de Clientes</h1>
+      <div class="stat"><strong id="total">0</strong><span>clientes cadastrados</span></div>
+    </div>
+    <div id="msg" role="status" aria-live="polite" hidden></div>
+    <div class="toolbar">
+      <input id="busca" type="search" placeholder="Buscar por nome ou e-mail" aria-label="Buscar por nome ou e-mail">
+      <a class="btn" href="cadastro.html">Adicionar novo cliente</a>
+    </div>
+    <div class="table-wrap">
+      <table id="tabela" hidden>
+        <thead><tr><th>ID</th><th>Nome</th><th>E-mail</th><th>Telefone</th><th>Endereço</th><th>Ações</th></tr></thead>
+        <tbody id="lista"></tbody>
+      </table>
+      <div class="vazio" id="vazio" hidden>
+        <p id="vazio-texto"></p>
+        <a class="btn btn-ghost btn-sm" href="cadastro.html">Cadastrar o primeiro cliente</a>
+      </div>
+    </div>
+  </div>
+</main>
+<dialog id="dlg" aria-labelledby="dlg-titulo">
+  <form method="dialog">
+    <h2 id="dlg-titulo">Excluir cliente?</h2>
+    <p id="dlg-texto"></p>
+    <div class="dlg-actions">
+      <button class="btn btn-ghost" value="cancelar">Cancelar</button>
+      <button class="btn btn-danger-solid" value="excluir">Excluir</button>
+    </div>
+  </form>
+</dialog>
+<footer class="site" id="site-footer"></footer>
+<script src="js/common.js"></script>
+<script src="js/clientes.js"></script>
+</body>
+</html>

@@ -1,0 +1,2 @@
+Coloque aqui suas fotos de moda (opcional): jaquetas.jpg, camisetas.jpg e calcas.jpg.
+Elas aparecem automaticamente na página inicial. Sem as fotos, o site usa degradês em preto, branco e cinza.
